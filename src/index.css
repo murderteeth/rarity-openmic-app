@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;700&display=swap');
+
+:root {
+  --bg-color: #1d1515;
+  --primary-font: "Source Code Pro";
+  --text-1: white;
+  --text-2: rgba(255, 255, 255, .8);
+  --text-4: rgba(255, 255, 255, .4);
+  --text-hl: red;
+  --header-height: 10vh;
+  --footer-height: 20vh;
+  --transition-timing-function-1: cubic-bezier(.4,0,.2,1);
+  --transition-duration-1: .2s;
+  --summoner-tile-width: 340px;
+  --summoner-tile-height: 380px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  font-family: var(--primary-font), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-1);
+  background-color: var(--bg-color);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect id='a' x='-1000' width='4000' height='100'/%3E%3Crect id='b' width='100' height='100' opacity='.5'/%3E%3C/defs%3E%3Cg style='transform-origin:center'%3E%3Cuse fill='%231B0000' href='%23a'/%3E%3Cuse fill='%23220505' href='%23a' y='100'/%3E%3Cuse fill='%23290a0a' href='%23a' y='200'/%3E%3Cuse fill='%23310d0e' href='%23a' y='300'/%3E%3Cuse fill='%233a0e11' href='%23a' y='400'/%3E%3Cuse fill='%23421013' href='%23a' y='500'/%3E%3Cuse fill='%234b1115' href='%23a' y='600'/%3E%3Cuse fill='%23541217' href='%23a' y='700'/%3E%3Cuse fill='%235e1419' href='%23a' y='800'/%3E%3Cuse fill='%2367151a' href='%23a' y='900'/%3E%3Cuse fill='%2370171b' href='%23a' y='1000'/%3E%3Cuse fill='%237a181c' href='%23a' y='1100'/%3E%3Cuse fill='%23831a1d' href='%23a' y='1200'/%3E%3Cuse fill='%238c1c1e' href='%23a' y='1300'/%3E%3Cuse fill='%23961E1E' href='%23a' y='1400'/%3E%3Cg id='c'%3E%3Cg fill-opacity='0.17'%3E%3Cuse fill='%23921d1e' href='%23b' x=''/%3E%3Cuse fill='%238f1c1e' href='%23b' x='600'/%3E%3Cuse fill='%238b1c1d' href='%23b' x='800'/%3E%3Cuse fill='%23881b1d' href='%23b' x='2300'/%3E%3Cuse fill='%23841a1d' href='%23b' x='1200'/%3E%3Cuse fill='%23801a1d' href='%23b' x='3400'/%3E%3Cuse fill='%237d191c' href='%23b' x='1400'/%3E%3Cuse fill='%2379181c' href='%23b' x='400'/%3E%3Cuse fill='%2376181c' href='%23b' x='2500'/%3E%3Cuse fill='%2372171b' href='%23b' x='1600'/%3E%3Cuse fill='%236f171b' href='%23b' x='1000'/%3E%3Cuse fill='%236b161a' href='%23b' x='2400'/%3E%3Cuse fill='%2368151a' href='%23b' x='1100'/%3E%3Cuse fill='%23641519' href='%23b' x='1700'/%3E%3Cuse fill='%23611419' href='%23b' x='2700'/%3E%3Cuse fill='%235d1418' href='%23b' x='1900'/%3E%3Cuse fill='%235a1318' href='%23b' x='3800'/%3E%3Cuse fill='%23561317' href='%23b' x='1800'/%3E%3Cuse fill='%23531217' href='%23b' x='2100'/%3E%3Cuse fill='%234f1216' href='%23b' x='200'/%3E%3Cuse fill='%234c1115' href='%23b' x='700'/%3E%3Cuse fill='%23481115' href='%23b' x='3900'/%3E%3Cuse fill='%23451014' href='%23b' x='2800'/%3E%3Cuse fill='%23420f13' href='%23b' x='100'/%3E%3Cuse fill='%233e0f12' href='%23b' x='2600'/%3E%3Cuse fill='%233b0e11' href='%23b' x='2200'/%3E%3Cuse fill='%23380e10' href='%23b' x='3000'/%3E%3Cuse fill='%23350d0f' href='%23b' x='3200'/%3E%3Cuse fill='%23320d0e' href='%23b' x='3100'/%3E%3Cuse fill='%232e0c0c' href='%23b' x='2900'/%3E%3Cuse fill='%232b0b0b' href='%23b' x='500'/%3E%3Cuse fill='%23280a09' href='%23b' x='3500'/%3E%3Cuse fill='%23260807' href='%23b' x='1500'/%3E%3Cuse fill='%23230606' href='%23b' x='1300'/%3E%3Cuse fill='%23210404' href='%23b' x='3600'/%3E%3Cuse fill='%231e0202' href='%23b' x='4000'/%3E%3C/g%3E%3C/g%3E%3Cuse href='%23c' x='-1000' y='100'/%3E%3Cuse href='%23c' x='-300' y='200'/%3E%3Cuse href='%23c' x='-1600' y='300'/%3E%3Cuse href='%23c' x='-500' y='400'/%3E%3Cuse href='%23c' x='-1800' y='500'/%3E%3Cuse href='%23c' x='-1100' y='600'/%3E%3Cuse href='%23c' x='-400' y='700'/%3E%3Cuse href='%23c' x='-1500' y='800'/%3E%3Cuse href='%23c' x='-300' y='900'/%3E%3Cuse href='%23c' x='-2100' y='1000'/%3E%3Cuse href='%23c' x='-1200' y='1100'/%3E%3Cuse href='%23c' x='-200' y='1200'/%3E%3Cuse href='%23c' x='-1900' y='1300'/%3E%3Cuse href='%23c' x='-700' y='1400'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+a, a:visited {
+  color: var(--text-1);
+  transition-timing-function: var(--transition-timing-function-1);
+  transition-duration: var(--transition-duration-1);
+}
+
+a:hover {
+  color: var(--text-hl);
+}
+
+button {
+  border: solid 1px var(--text-4);
+  background: none;
+  cursor: pointer;
+  color: var(--text-1);
+  transition-timing-function: var(--transition-timing-function-1);
+  transition-duration: var(--transition-duration-1);
+}
+
+button:hover {
+  color: var(--text-hl);
+  border-color: var(--text-hl);
+}
+
+.emoji {
+  color: var(--text-1);
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 90vw;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header div {
+  width: 33%;
+}
+
+header .brand a {
+  text-decoration: none;
+}
+
+header .menu {
+  text-align: center;
+}
+
+header .wallet {
+  text-align: right;
+}
+
+header .wallet button {
+  margin: 0 1rem;
+  --size: 32px;
+  font-size: 1rem;
+  width: var(--size);
+  height: var(--size);
+  border-radius: calc(var(--size) / 2);
+}
+
+main {
+  width: 100%;
+  /* height: calc(100vh - var(--header-height) - var(--footer-height)); */
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+.hello {
+  height: 100%;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hello h1 {
+  font-size: 3.4rem;
+  margin: 0;
+}
+
+.hello p {
+  width: 60vw;
+  font-size: 1.2rem;
+}
+
+.hello button {
+  padding: .82rem 3rem;
+  margin: 2rem 0;
+  font-size: 1.6rem;
+  border-radius: 32px;
+}
+
+.no-bards {
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.bards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.bards, .bards ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bards .treasures {
+  padding-left: 2rem;
+}
+
+.bards > li {
+  margin: 1rem;
+  padding: 1rem;
+  width: var(--summoner-tile-width);
+  height: var(--summoner-tile-height);
+  border: solid 1px var(--text-4);
+  border-radius: 24px;
+  transition-timing-function: var(--transition-timing-function-1);
+  transition-duration: var(--transition-duration-1);
+}
+
+.bards > li:hover {
+  color: var(--text-hl);
+  border-color: var(--text-hl);
+}
+
+.bards .openmic h2 {
+  margin: 1rem 0 0 0;
+}
+
+.bards .openmic li {
+  display: flex;
+  align-items: center;
+}
+
+.bards .openmic li .emoji {
+  margin-right: .5rem;
+  font-size: 2rem;
+}
+
+.prizes {
+  margin: 0 5vw;
+  padding-top: 2rem;
+  height: 100%;
+}
+
+.prizes ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.prizes ul li {
+  display: flex;
+  align-items: center;
+  margin: .5rem;
+  padding: .5rem 1rem;
+  border: solid 1px var(--text-4);
+  border-radius: 24px;
+  transition-timing-function: var(--transition-timing-function-1);
+  transition-duration: var(--transition-duration-1);
+}
+
+.prizes ul li:hover {
+  color: var(--text-hl);
+  border-color: var(--text-hl);
+}
+
+.prizes ul li .emoji {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+footer {
+  width: 90vw;
+  height: var(--footer-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.credits {
+  font-size: 1rem;
+  text-align: left;
+  color: var(--text-4);
+}
+
+.credits div:first-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social {
+  color: var(--text-4);
+  width: 48px;
+  height: 48px;
+  margin-left: 2rem;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .32s;
+}
+
+.social:hover {
+  color: var(--text-hl);
+}
