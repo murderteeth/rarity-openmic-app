@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import env from 'react-dotenv';
 import { RarityApp, RarityExpansion, configureExpansions, useWeb3 } from 'rarity-react';
 import Header from './components/Header';
 import Hello from './components/Hello';
@@ -7,6 +8,10 @@ import Footer from './components/Footer';
 import config from './config.json';
 import localExpansions from './localExpansions';
 import Prizes from './components/Prizes';
+
+if(env.ftmscanKey) {
+  config.ftmscanKey = env.ftmscanKey;
+}
 
 const sideExpansions = [] as RarityExpansion[];
 sideExpansions.push(...configureExpansions(config.localExpansions, localExpansions));
