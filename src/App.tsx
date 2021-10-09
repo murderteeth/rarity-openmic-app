@@ -23,7 +23,7 @@ function Main() {
     if(address && !active) {
       connect(walletType.METAMASK);
     }
-  }, [address, active]);
+  }, [address, active, connect, walletType.METAMASK]);
 
   return (
     <div className="app">
