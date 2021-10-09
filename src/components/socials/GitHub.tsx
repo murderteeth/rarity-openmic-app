@@ -1,6 +1,6 @@
 export default function GitHub() {
   return (
-    <a href="https://github.com/murderteeth/rarity-openmic" target="_blank" rel="noreferrer">
+    <a href="https://github.com/murderteeth/rarity-openmic-app" target="_blank" rel="noreferrer">
       <svg xmlns="http://www.w3.org/2000/svg" 
         width="16" height="16" 
         fill="currentColor"
